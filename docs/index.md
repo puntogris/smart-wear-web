@@ -1,11 +1,11 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
+title: Home
 hero:
   name: "Smart Wear"
-  text: "Android App"
-  tagline: My great project tagline
+  text: "App"
+  tagline: Clothing recommendations based on the weather for Android.
   image:
     src: "logo.webp"
     alt: "logo"
