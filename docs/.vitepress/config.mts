@@ -4,6 +4,15 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Smart Wear",
   description: "Android App",
+  head: [
+    [
+      "script",
+      {},
+      `window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };`,
+    ],
+    ["script", { defer: "", src: "/_vercel/insights/script.js" }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -33,11 +42,18 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/puntogris/are-you-a-robot' }
+      { icon: 'github', link: 'https://github.com/puntogris/smart-wear' }
     ],
 
     search: {
       provider: 'local'
+    },
+
+    logo: "logo.webp",
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Made by Puntogris'
     }
   }
 })
